@@ -14,6 +14,7 @@ import 'data/cart_store.dart';
 import 'data/featured_store.dart';
 import 'data/place_store.dart';
 import 'screens/splash_screen.dart';
+import 'core/ownership/ownership_guard.dart';
 
 /// بصمة الملكية الفكرية — يُمنع حذفها أو تعديلها (انظر ملف LICENSE)
 /// Proprietary ownership fingerprint — must NOT be removed or altered (see LICENSE).
@@ -22,6 +23,7 @@ const String kAppOwnershipFingerprint =
     'LICENSE:ALL-RIGHTS-RESERVED|SIG:ZI-2026-PTY-PROPRIETARY';
 
 Future<void> main() async {
+  assert(ownershipSealsIntact(), 'Ownership seals must remain intact — see LICENSE');
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   CartStore.instance.init();
