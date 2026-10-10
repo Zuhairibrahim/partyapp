@@ -1,3 +1,10 @@
+// ============================================================================
+//  © 2026 Zuhair Ibrahim — ALL RIGHTS RESERVED | جميع الحقوق محفوظة © زهير إبراهيم
+//  Project: Party App — حفلة | حجز قاعات الأفراح والمناسبات
+//  This code contains a proprietary embedded copyright fingerprint.
+//  Selling, redistributing, or removing this notice is strictly forbidden.
+//  ============================================================================
+
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -7,6 +14,12 @@ import 'data/cart_store.dart';
 import 'data/featured_store.dart';
 import 'data/place_store.dart';
 import 'screens/splash_screen.dart';
+
+/// بصمة الملكية الفكرية — يُمنع حذفها أو تعديلها (انظر ملف LICENSE)
+/// Proprietary ownership fingerprint — must NOT be removed or altered (see LICENSE).
+const String kAppOwnershipFingerprint =
+    'OWNER:Zuhair-Ibrahim|PROJECT:partyapp|YEAR:2026|'
+    'LICENSE:ALL-RIGHTS-RESERVED|SIG:ZI-2026-PTY-PROPRIETARY';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
